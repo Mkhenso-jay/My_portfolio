@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Mkhenso Mngomezulu</title>
+     
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- External Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+<!-- Header / Navigation -->
+<header class="fixed w-full z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+  <a href="index.html">
+  <img src="../assets/my-logo.png" alt="Mkhenso Logo" class="h-10">
+</a>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="index.html" class="transition">Home</a></li>
+            <li><a href="about.html" class="transition">About</a></li>
+            <li><a href="projects.html" class="transition">Projects</a></li>
+            <li><a href="contact.html" class="transition">Contact</a></li>
+        </ul>
+        <div class="md:hidden">
+            <button id="menuBtn" aria-label="Toggle mobile menu" class="p-2 rounded-md">
+                <svg width="22" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="1" width="24" height="2" rx="1" fill="#e2e8f0"/>
+                    <rect y="6" width="24" height="2" rx="1" fill="#e2e8f0"/>
+                    <rect y="11" width="24" height="2" rx="1" fill="#e2e8f0"/>
+                </svg>
+            </button>
+            <div id="mobile-menu" class="hidden absolute top-16 right-0 w-48 p-4 shadow-lg rounded-lg">
+                <ul class="flex flex-col gap-4">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Projects Section -->
+<section class="pt-28 pb-16 container mx-auto px-4">
+    <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 animate-fade-in">My Projects</h1>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto mb-12 animate-slide-up">
+            Here's a selection of my work. Hover over a card to see more details and a link to the code.
+        </p>
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- Project 1: Event Management System -->
+        <div class="project-card">
+            <!-- Card Front -->
+            <div class="card-front" style="background-image: url('../assets/projects/Screenshot\ \ HOME.png');">
+                <div class="card-title-banner">
+                    <h3 class="text-xl font-bold">Event Management System</h3>
+                </div>
+            </div>
+            <!-- Card Back -->
+            <div class="card-back">
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Event Management System</h3>
+                    <p class="mb-4">A web-based system to efficiently manage events, venues, and calendars.</p>
+                    <div class="mb-4">
+                        <span class="chip">Java</span>
+                        <span class="chip">XHTML</span>
+                        <span class="chip">MySQL</span>
+                    </div>
+                    <a href="https://github.com/Mkhenso-jay/EventManagementSystem.git" target="_blank" class="font-semibold hover:underline inline-block bg-blue-600 text-white px-4 py-2 rounded-lg">
+                        View on GitHub <i class="fab fa-github ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more project cards here... -->
+        <!-- Example Placeholder Card 2 -->
+        <div class="project-card-static">
+            <div class="p-6 text-center">
+                <h3 class="text-xl font-bold mb-2">Your Next Project</h3>
+                <p>This is a placeholder for another one of your great projects.</p>
+            </div>
+        </div>
+        
+        <!-- Example Placeholder Card 3 -->
+        <div class="project-card-static">
+            <div class="p-6 text-center">
+                <h3 class="text-xl font-bold mb-2">Your Next Project</h3>
+                <p>This is a placeholder for another one of your great projects.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="bg-gray-50 border-t py-6 mt-12">
+    <div class="container mx-auto px-6 text-center text-gray-600">
+        © <span id="year"></span> Mkhenso Mngomezulu — Final Year, University of Mpumalanga
+    </div>
+</footer>
+
+<script>
+    // mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    // set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

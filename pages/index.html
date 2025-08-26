@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mkhenso Mngomezulu | Portfolio</title>
+  <link rel="icon" type="image/png" href="../assets/my-logo2.png">
+   
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- External styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-900" style="font-family: 'Poppins', sans-serif;">
+
+<header class="fixed top-0 left-0 w-full bg-gray-900 shadow-md z-50 transition-all duration-300">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+      <a href="index.html">
+        <img src="../assets/my-logo.png" alt="Mkhenso Logo" class="h-16 block"> 
+      </a>
+
+      <ul class="hidden md:flex gap-8 text-white font-semibold">  
+        <li><a href="index.html" class="hover:text-blue-400 transition-colors">Home</a></li> 
+        <li><a href="about.html" class="hover:text-blue-400 transition-colors">About</a></li>
+        <li><a href="projects.html" class="hover:text-blue-400 transition-colors">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+      </ul>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="assets/pdf/mkhenso_resume.pdf" class="text-sm px-4 py-2 border border-gray-300 text-white rounded hover:bg-gray-800 transition tilt-button" aria-label="Download Resume">Resume</a> <!-- Adjusted colors -->
+        <a href="https://github.com/Mkhenso-jay" target="_blank" class="text-sm px-4 py-2 bg-black text-white rounded hover:opacity-90 transition tilt-button" aria-label="Visit GitHub">GitHub</a> <!-- Changed to black bg with white text -->
+      </div>
+
+      <div class="md:hidden">
+        <button id="menuBtn" aria-label="Toggle mobile menu" class="p-2 rounded-md hover:bg-gray-800">
+          <svg width="22" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="1" width="24" height="2" rx="1" fill="#FFFFFF"/>  
+            <rect y="6" width="24" height="2" rx="1" fill="#FFFFFF"/>
+            <rect y="11" width="24" height="2" rx="1" fill="#FFFFFF"/>
+          </svg>
+        </button>
+        <div id="mobile-menu" class="hidden absolute top-16 right-0 bg-gray-900 w-48 p-4 shadow-lg">  
+          <ul class="flex flex-col gap-4 text-white"> 
+            <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+            <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+            <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+            <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-32">
+    <section class="min-h-[78vh] container mx-auto px-6 flex flex-col lg:flex-row items-center gap-10">
+      <div class="lg:w-6/12">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 animate-fade-in">
+          Hi, I'm <span class="name-flip text-blue-600">Mkhenso Mngomezulu</span>
+        </h1>
+
+        <p class="text-gray-700 text-lg md:text-xl mb-6 animate-slide-up">
+          I'm a final-year <strong>Bachelor of ICT student</strong> at the University of Mpumalanga. My interests span across <strong>full-stack development</strong>, <strong>machine learning</strong>, and <strong>cybersecurity</strong>. I'm passionate about building modern, secure, and intelligent systems.
+        </p>
+
+        <div class="flex flex-wrap gap-3 mb-6 animate-fade-in">
+          <a href="projects.html" class="inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:shadow-lg transition" aria-label="View Projects">
+            View Projects
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="contact.html" class="inline-flex items-center gap-2 border border-blue-600 text-blue-600 px-5 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition" aria-label="Contact Me">
+            Contact Me
+          </a>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <span class="chip">Full-Stack Development</span>
+          <span class="chip">Machine Learning (AI)</span>
+          <span class="chip">Cybersecurity</span>
+          <span class="chip">Jakarta / Java EE</span>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-xl">
+          <div class="stat-card">
+            <div class="stat-title">Final Year</div>
+            <div class="stat-sub">University of Mpumalanga — ICT</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-title">Languages</div>
+            <div class="stat-sub">Java · JavaScript · Python · Kotlin</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-title">Databases</div>
+            <div class="stat-sub">MySQL; PostgreSQL; Firebase</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: portrait + rotating tools under the picture -->
+      <div class="lg:w-5/12 flex flex-col items-center lg:items-end gap-6">
+        <div class="profile-wrap">
+          <img src="../assets/Photograph.jpg" alt="Mkhenso Mngomezulu - portrait" class="profile-image" loading="lazy" />
+          <div class="glitter"></div>
+        </div>
+
+        <!-- ROTATING TOOLS CAROUSEL (under the portrait) -->
+        <div class="carousel-container" aria-label="Skills carousel">
+          <div class="carousel" role="list">
+            <div class="spin-item"><img src="../assets/html-logo.png" alt="HTML5 logo"></div>
+            <div class="spin-item"><img src="../assets/css-logo.png" alt="CSS3 logo"></div>
+            <div class="spin-item"><img src="../assets/js-logo.png" alt="JavaScript logo"></div>
+            <div class="spin-item"><img src="../assets/react-logo.png" alt="React logo"></div>
+            <div class="spin-item"><img src="../assets/node.js-logo.png" alt="Node.js logo"></div>
+            <div class="spin-item"><img src="../assets/python-logo.png" alt="Python logo"></div>
+            <div class="spin-item"><img src="../assets/kotlin-logo.png" alt="Kotlin logo"></div>
+            <div class="spin-item"><img src="../assets/postgress-logo.png" alt="Postgres logo"></div>
+            <div class="spin-item"><img src="../assets/jakarta-logo.png" alt="Jakarta logo"></div>
+            <div class="spin-item"><img src="../assets/tailwindcss-logo.png" alt="Tailwind logo"></div>
+            <div class="spin-item"><img src="../assets/firebase-logo.png" alt="Firebase logo"></div>
+            <div class="spin-item"><img src="../assets/mysql-logo.png" alt="MySQL logo"></div>
+            <div class="spin-item"><img src="../assets/Java-Logo.png" alt="Java logo"></div>
+            <div class="spin-item"><img src="../assets/androidstudio.png" alt="Android Studio logo"></div>
+          </div>
+        </div>
+
+        <div class="max-w-md text-center lg:text-right pt-8">
+          <p class="text-gray-700">
+            I combine front-end & back-end skills with ML experience and security awareness to design and deliver solutions that work in production. I enjoy learning, collaborating, and shipping features that help users.
+          </p>
+          <div class="mt-4 flex justify-center lg:justify-end gap-3">
+            <a href="assets/pdf/mkhenso_resume.pdf" class="text-sm px-4 py-2 border rounded hover:bg-gray-100" aria-label="Download Resume">Download Resume</a>
+            <a href="https://github.com/Mkhenso-jay" target="_blank" class="text-sm px-4 py-2 bg-gray-900 text-white rounded hover:opacity-90" aria-label="Visit GitHub">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section RESTORED -->
+    <section class="py-12 container mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 animate-fade-in">Best Projects</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <div class="card-front">
+                <h3 class="text-lg font-bold">Project One</h3>
+                <p class="text-sm text-gray-400 mt-1">A brief description of the first project.</p>
+            </div>
+            <div class="card-back">
+                <h3 class="text-lg font-bold">Tech Stack</h3>
+                <p class="text-sm mt-2">React, Node.js, PostgreSQL</p>
+                <a href="#" class="text-sm text-blue-400 mt-4 hover:underline">View Project</a>
+            </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <div class="card-front">
+                <h3 class="text-lg font-bold">Project Two</h3>
+                <p class="text-sm text-gray-400 mt-1">A brief description of the second project.</p>
+            </div>
+            <div class="card-back">
+                <h3 class="text-lg font-bold">Tech Stack</h3>
+                <p class="text-sm mt-2">Python, Flask, TensorFlow</p>
+                <a href="#" class="text-sm text-blue-400 mt-4 hover:underline">View Project</a>
+            </div>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="project-card">
+            <div class="card-front">
+                <h3 class="text-lg font-bold">Project Three</h3>
+                <p class="text-sm text-gray-400 mt-1">A brief description of the third project.</p>
+            </div>
+            <div class="card-back">
+                <h3 class="text-lg font-bold">Tech Stack</h3>
+                <p class="text-sm mt-2">Java, Spring Boot, MySQL</p>
+                <a href="#" class="text-sm text-blue-400 mt-4 hover:underline">View Project</a>
+            </div>
+        </div>
+        <!-- Project Card 4 -->
+        <div class="project-card">
+            <div class="card-front">
+                <h3 class="text-lg font-bold">Project Four</h3>
+                <p class="text-sm text-gray-400 mt-1">A brief description of the fourth project.</p>
+            </div>
+            <div class="card-back">
+                <h3 class="text-lg font-bold">Tech Stack</h3>
+                <p class="text-sm mt-2">Kotlin, Android Studio, Firebase</p>
+                <a href="#" class="text-sm text-blue-400 mt-4 hover:underline">View Project</a>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-50 border-t py-6 mt-12">
+    <div class="container mx-auto px-6 text-center text-gray-600">
+      © <span id="year"></span> Mkhenso Mngomezulu — Final Year, University of Mpumalanga
+    </div>
+  </footer>
+
+  <script>
+    // mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // pause carousel on reduced motion preference
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const el = document.querySelector('.carousel');
+      if (el) el.style.animationPlayState = 'paused';
+    }
+  </script>
+</body>
+</html>
