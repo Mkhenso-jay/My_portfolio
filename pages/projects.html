@@ -19,34 +19,34 @@
 
 <!-- Header / Navigation -->
 <header class="fixed w-full z-50">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+  <nav class="container mx-auto flex justify-between items-center py-4 px-6">
   <a href="index.html">
-  <img src="../assets/my-logo.png" alt="Mkhenso Logo" class="h-10">
-</a>
-        <ul class="hidden md:flex space-x-6">
-            <li><a href="index.html" class="transition">Home</a></li>
-            <li><a href="about.html" class="transition">About</a></li>
-            <li><a href="projects.html" class="transition">Projects</a></li>
-            <li><a href="contact.html" class="transition">Contact</a></li>
+        <img src="../assets/my-logo.png" alt="Mkhenso Logo" class="h-16 block"> 
+      </a>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="index.html" class="transition">Home</a></li>
+      <li><a href="about.html" class="transition">About</a></li>
+      <li><a href="projects.html" class="transition">Projects</a></li>
+      <li><a href="contact.html" class="transition">Contact</a></li>
+    </ul>
+    <div class="md:hidden">
+      <button id="menuBtn" aria-label="Toggle mobile menu" class="p-2 rounded-md">
+        <svg width="22" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="1" width="24" height="2" rx="1" fill="#e2e8f0"/>
+          <rect y="6" width="24" height="2" rx="1" fill="#e2e8f0"/>
+          <rect y="11" width="24" height="2" rx="1" fill="#e2e8f0"/>
+        </svg>
+      </button>
+      <div id="mobile-menu" class="hidden absolute top-16 right-0 w-48 p-4 shadow-lg rounded-lg">
+        <ul class="flex flex-col gap-4">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="md:hidden">
-            <button id="menuBtn" aria-label="Toggle mobile menu" class="p-2 rounded-md">
-                <svg width="22" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect y="1" width="24" height="2" rx="1" fill="#e2e8f0"/>
-                    <rect y="6" width="24" height="2" rx="1" fill="#e2e8f0"/>
-                    <rect y="11" width="24" height="2" rx="1" fill="#e2e8f0"/>
-                </svg>
-            </button>
-            <div id="mobile-menu" class="hidden absolute top-16 right-0 w-48 p-4 shadow-lg rounded-lg">
-                <ul class="flex flex-col gap-4">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <!-- Projects Section -->
