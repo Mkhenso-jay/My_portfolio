@@ -1,141 +1,152 @@
-  <!DOCTYPE html>
-  <html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Mkhenso Mngomezulu</title>
-      <link rel="icon" type="image/png" href="assets/my-logo2.png">
-   
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Mkhenso Mngomezulu</title>
+  <link rel="icon" type="image/png" href="assets/my-logo2.png">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Devicon Icons for programming languages -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+<style>
+  .key {
+    width: 90px;
+    height: 90px;
+    background: #222;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5), inset 0 -4px 6px rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+
+  .key:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.6);
+  }
+
+  .key span {
+    margin-top: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #ddd;
+  }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Header / Navigation -->
+  <header class="fixed w-full z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html">
+          <img src="../assets/my-logo.png" alt="Mkhenso Logo" class="h-16 block"> 
+        </a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="transition">Home</a></li>
+        <li><a href="about.html" class="transition">About</a></li>
+        <li><a href="projects.html" class="transition">Projects</a></li>
+        <li><a href="contact.html" class="transition">Contact</a></li>
+      </ul>
+      <div class="md:hidden">
+        <button id="menuBtn" aria-label="Toggle mobile menu" class="p-2 rounded-md">
+          <svg width="22" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="1" width="24" height="2" rx="1" fill="#e2e8f0"/>
+            <rect y="6" width="24" height="2" rx="1" fill="#e2e8f0"/>
+            <rect y="11" width="24" height="2" rx="1" fill="#e2e8f0"/>
+          </svg>
+        </button>
+        <div id="mobile-menu" class="hidden absolute top-16 right-0 w-48 p-4 shadow-lg rounded-lg">
+          <ul class="flex flex-col gap-4">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section class="pt-28 pb-16 container mx-auto px-4">
+    <h1 class="text-4xl font-extrabold text-center mb-8 animate-fade-in">About Me</h1>
+    <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center animate-slide-up">
+      I'm <span class="font-semibold">Mkhenso Mngomezulu</span>, a final-year Bachelor of ICT student at the University of Mpumalanga.
+      My interests span across <span class="text-blue-600">full-stack development</span>, 
+      <span class="text-blue-600">machine learning</span>, and <span class="text-blue-600">cybersecurity</span>.  
+      I'm passionate about building modern, secure, and intelligent systems.
+    </p>
+  </section>
+
+  <!-- Tools & Languages as Keyboard Keys -->
+<section class="pb-16 container mx-auto px-4">
+  <h2 class="text-3xl font-bold text-center mb-10 animate-fade-in">Tools & Languages</h2>
+  <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-items-center">
     
-    <!-- Devicon Icons for programming languages -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-50 text-gray-900">
-
-    <!-- Navbar -->
-   
-<!-- Header / Navigation -->
-<header class="fixed w-full z-50">
-  <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-    <a href="index.html">
-        <img src="../assets/my-logo.png" alt="Mkhenso Logo" class="h-16 block"> 
-      </a>
-    <ul class="hidden md:flex space-x-6">
-      <li><a href="index.html" class="transition">Home</a></li>
-      <li><a href="about.html" class="transition">About</a></li>
-      <li><a href="projects.html" class="transition">Projects</a></li>
-      <li><a href="contact.html" class="transition">Contact</a></li>
-    </ul>
-    <div class="md:hidden">
-      <button id="menuBtn" aria-label="Toggle mobile menu" class="p-2 rounded-md">
-        <svg width="22" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect y="1" width="24" height="2" rx="1" fill="#e2e8f0"/>
-          <rect y="6" width="24" height="2" rx="1" fill="#e2e8f0"/>
-          <rect y="11" width="24" height="2" rx="1" fill="#e2e8f0"/>
-        </svg>
-      </button>
-      <div id="mobile-menu" class="hidden absolute top-16 right-0 w-48 p-4 shadow-lg rounded-lg">
-        <ul class="flex flex-col gap-4">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+    <div class="key">
+      <i class="devicon-java-plain colored text-3xl"></i>
+      <span>Java</span>
     </div>
-  </nav>
-</header>
+    <div class="key">
+      <i class="devicon-python-plain colored text-3xl"></i>
+      <span>Python</span>
+    </div>
+    <div class="key">
+      <i class="devicon-javascript-plain colored text-3xl"></i>
+      <span>JavaScript</span>
+    </div>
+    <div class="key">
+      <i class="devicon-kotlin-plain colored text-3xl"></i>
+      <span>Kotlin</span>
+    </div>
+    <div class="key">
+      <i class="devicon-html5-plain colored text-3xl"></i>
+      <span>HTML</span>
+    </div>
+    <div class="key">
+      <i class="devicon-css3-plain colored text-3xl"></i>
+      <span>CSS</span>
+    </div>
+    <div class="key">
+      <i class="devicon-react-original colored text-3xl"></i>
+      <span>React</span>
+    </div>
+    <div class="key">
+      <i class="devicon-tailwindcss-plain colored text-3xl"></i>
+      <span>Tailwind</span>
+    </div>
+    <div class="key">
+      <i class="devicon-java-plain colored text-3xl"></i>
+      <span>Jakarta EE</span>
+    </div>
+    <div class="key">
+      <i class="devicon-mysql-plain colored text-3xl"></i>
+      <span>MySQL</span>
+    </div>
+    <div class="key">
+      <i class="devicon-postgresql-plain colored text-3xl"></i>
+      <span>PostgreSQL</span>
+    </div>
+    <div class="key">
+      <i class="devicon-github-original colored text-3xl"></i>
+      <span>GitHub</span>
+    </div>
 
-    <!-- About Me Section -->
-    <section class="pt-28 pb-16 container mx-auto px-4">
-      <h1 class="text-4xl font-extrabold text-center mb-8 animate-fade-in">About Me</h1>
-      <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center animate-slide-up">
-        I'm <span class="font-semibold">Mkhenso Mngomezulu</span>, a final-year Bachelor of ICT student at the University of Mpumalanga.
-        My interests span across <span class="text-blue-600">full-stack development</span>, 
-        <span class="text-blue-600">machine learning</span>, and <span class="text-blue-600">cybersecurity</span>.  
-        I'm passionate about building modern, secure, and intelligent systems.
-      </p>
-    </section>
+  </div>
+</section>
 
-    <!-- Tools & Languages -->
-    <section class="pb-16 container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 animate-fade-in">Tools & Languages</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-center">
-        <!-- Java -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-java-plain colored text-6xl"></i>
-          <p class="mt-2">Java</p>
-        </div>
-        <!-- JavaScript -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-javascript-plain colored text-6xl"></i>
-          <p class="mt-2">JavaScript</p>
-        </div>
-        <!-- Python -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-python-plain colored text-6xl"></i>
-          <p class="mt-2">Python</p>
-        </div>
-        <!-- Kotlin -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-kotlin-plain colored text-6xl"></i>
-          <p class="mt-2">Kotlin</p>
-        </div>
-        <!-- HTML -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-html5-plain colored text-6xl"></i>
-          <p class="mt-2">HTML</p>
-        </div>
-        <!-- CSS -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-css3-plain colored text-6xl"></i>
-          <p class="mt-2">CSS</p>
-        </div>
-        <!-- React -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-react-original colored text-6xl"></i>
-          <p class="mt-2">React</p>
-        </div>
-        <!-- Tailwind CSS -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-tailwindcss-plain colored text-6xl"></i>
-          <p class="mt-2">Tailwind</p>
-        </div>
-        <!-- Jakarta EE -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-java-plain colored text-6xl"></i>
-          <p class="mt-2">Jakarta EE</p>
-        </div>
-        <!-- MySQL -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-mysql-plain colored text-6xl"></i>
-          <p class="mt-2">MySQL</p>
-        </div>
-        <!-- PostgreSQL -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-postgresql-plain colored text-6xl"></i>
-          <p class="mt-2">PostgreSQL</p>
-        </div>
-        <!-- Git & GitHub -->
-        <div class="flex flex-col items-center hover:scale-110 transition">
-          <i class="devicon-github-original colored text-6xl"></i>
-          <p class="mt-2">GitHub</p>
-        </div>
-      </div>
-    </section>
-
-  </body>
-  </html>
+</body>
+</html>
